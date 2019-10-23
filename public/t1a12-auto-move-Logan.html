@@ -1,0 +1,20 @@
+<script>
+   let myInterval
+</script>
+
+<h1 align=center>t1a12-auto-move-Logan</h1>
+Make all directions (in a table?) replace fred with an image<br>
+
+<div id="myDiv01" style="position:absolute; left:200; top:10; " >Fred</div>
+
+<input type=button value="Go Right Auto" onclick="{
+
+   clearInterval(myInterval)
+   myInterval = setInterval(function(){
+
+    document.getElementById('myDiv01').style.left =
+parseInt(document.getElementById('myDiv01').style.left) + 10
+
+  } ,200)
+
+}">
